@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BSLAP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BSLAP</h1>
+        <div class="form-group name-fields">
+			<div class="name-field">
+				<label for="firstName">First Name:</label>
+				<input type="text" id="firstName" placeholder="Enter the award recipient's first name">
+			</div>
+			<div class="name-field">
+				<label for="lastName">Last Name:</label>
+				<input type="text" id="lastName" placeholder="Enter the award recipient's last name">
+			</div>
+        </div>
+		<div class="form-group">
+            <label for="imageUpload">Upload Image:</label>
+            <input type="file" id="imageUpload" accept="image/*">
+        </div>
+		<div class="form-group">
+            <label for="awardType">Select Award:</label>
+            <select id="awardType">
+                <option value="Dickhead">Dickhead</option>
+                <option value="Asshat">Asshat</option>
+                <option value="Test2">Test2</option>
+                <option value="Test3">Test3</option>
+                <option value="Test4">Test4</option>
+                <option value="Test5">Test5</option>
+                <option value="Test6">Test6</option>
+                <option value="Test7">Test7</option>
+            </select>
+        </div>
+        <button id="startButton">GO</button>
+		<div id="pulsingBar" class="pulsing hidden"></div>
+		<div id="statusText" class="status-text hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
