@@ -42,7 +42,8 @@ export default function ContactForm({ onSubmitSuccess }: ContactFormProps) {
       )
 
       onSubmitSuccess()
-    } catch (err) {
+    } catch (error) {
+      console.error('Error sending message:', error)
       setError('Failed to send message. Please try again.')
     }
   }
