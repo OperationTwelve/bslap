@@ -1,7 +1,6 @@
 'use client'
 
-import { useState, FormEvent, useEffect } from 'react'
-import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
 import ContactForm from '@/components/ContactForm'
 import ThankYou from '@/components/ThankYou'
 

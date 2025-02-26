@@ -4,6 +4,7 @@ import { useSearchParams, useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { generateImage } from '@/app/workflows/comfyui/api'
+import Image from 'next/image'
 
 export default function Result() {
   const router = useRouter()
@@ -16,7 +17,6 @@ export default function Result() {
   const firstName = searchParams.get('firstName')
   const lastName = searchParams.get('lastName')
   const awardType = searchParams.get('awardType')
-  const xProfileUrl = searchParams.get('xProfileUrl')
 
   const handleReroll = async () => {
     setIsLoading(true)
@@ -66,10 +66,12 @@ export default function Result() {
         <h1 className="text-3xl font-bold text-center">Your Generated Award</h1>
         
         <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg shadow-lg">
-          <img
+          <Image
             src={imageUrl}
             alt="Generated Award"
-            className="w-full h-full object-contain bg-black/5"
+            layout="fill"
+            objectFit="contain"
+            className="bg-black/5"
           />
         </div>
 
