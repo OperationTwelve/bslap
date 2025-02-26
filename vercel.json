@@ -1,8 +1,0 @@
-{
-    "build": {
-      "env": {
-        "BUN_INSTALL": "1"
-      }
-    }
-  }
-  
