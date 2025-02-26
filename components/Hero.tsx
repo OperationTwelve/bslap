@@ -10,10 +10,10 @@ export default function Hero() {
           <NFTSlideshow />
         </div>
         <div className="w-full md:w-1/2 space-y-4">
-          <h1 className="text-4xl font-bold">Claim Your BSlap Award</h1>
-          <p className="text-xl">Generate and mint your own exclusive BSlap digital artwork.</p>
+          <h1 className="text-4xl font-bold">Create Your Award</h1>
+          <p className="text-xl">Generate and mint your own exclusive Award.</p>
           <Link href="/generate">
-            <Button size="lg">Create and Claim BSlap</Button>
+            <Button size="lg">Create and Claim Award</Button>
           </Link>
         </div>
       </div>
