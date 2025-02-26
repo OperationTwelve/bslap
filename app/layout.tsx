@@ -9,8 +9,8 @@ import AppKitProvider from "@/components/AppKitProvider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "BSlap NFT - Urban Art Collectibles",
-  description: "Create and claim your unique BSlap NFT, a fusion of street art and digital innovation",
+  title: "BSlap Awards",
+  description: "Give The Person You Like Or Dislike The Most An Award",
 }
 
 export default function RootLayout({
