@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "bslap3",
+      "name": "bslap",
       "dependencies": {
         "@emailjs/browser": "^4.4.1",
         "@radix-ui/react-slot": "^1.1.2",
