@@ -2,7 +2,14 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['bslapnft.app'], // Add your domain here
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'bslapnft.app',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
   webpack: (config) => {
     // Ignore fs module in the frontend
